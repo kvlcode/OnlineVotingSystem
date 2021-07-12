@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+    <link href="../style.css" rel="stylesheet" id="bootstrap-css">
+    <!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> -->
+    <!-- <script src="lgin.js"></script> -->
+    <!------ Include the above in your HEAD tag ---------->
+    
+    <title>Register</title>
+
+</head>
+<body>
+    
+    <section style="height: 100vh;">
+        <div style=" background-attachment: fixed; background-size: cover; width: 100%; height: 100vh; position: relative;">
+            <div class="baslik">
+                <b style="font-size: 50px; text-align: center; margin-bottom: 15px; display: block;">Online Voting System</b>
+                <hr style="border: 1px solid rgb(19, 18, 18);">
+                
+            </div>
+            <section>
+                <form method="POST" action="../back/register.php" enctype="multipart/form-data">
+                    <div class="regibox">
+                        <div class="regibaslik">Register</div>
+                        <hr style="border: 1px solid rgb(122, 122, 122);">
+                        <input class="reginp" type="text" name="name" placeholder="Enter Name" required>
+                        <input class="reginp" type="number" name="mobile" placeholder="Enter Mobile Number" required>
+                        <input class="reginp" type="password" name="password" placeholder="Enter Password" required>
+                        <input class="reginp" type="password" name="cpassword" placeholder="Confirm Password" required>
+                    
+                        <select class="reginp2" name="role" placeholder="Select role">
+                            <option value="1" >Voter</option>
+                            <option value="2" >Group</option>
+                        </select><br><br>
+                        Upload photo:<input class="reginp3" type="file" name="photo" required>
+                        <a href="#blank" target="blank"><input class="butonregi" type="submit" name="" value="Register"></a>
+                    </div>
+                </form>
+            </section><br>
+            <span class="rspn1" >Already User ?</span>
+            <span class="rspn2" ><a class="spn2" href="../index.html">Login here</a></span>
+            <span class="rspn3" >Developed by <a class="spn2" href="https://www.linkedin.com/in/kaval-prajapati-0b4817210" style="text-decoration: none;">KAVAL</a></span>
+        </div>
+        </section>
+        
+</body>
+</html>
